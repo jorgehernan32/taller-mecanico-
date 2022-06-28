@@ -1,0 +1,235 @@
+/* Agregar el font family */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    /* 1.6rem o 62.5% */
+
+}
+.hornet{
+    max-width: 50%;/* Anchura maxima */
+    
+  }
+/* Clases globales */
+.contenedor{
+    width: 90%;
+    max-width: 120rem;/* ancho */
+    margin: 0 auto;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: orangered;
+}
+h3{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+/* Termina Globales */
+.contenido_buscar {
+    margin: 0 0;
+    /* Margen de top y botton 0 */
+    background-color: aqua;
+    /*  */
+    padding: 1rem;
+    /* Margen interno */
+
+    /* Que me organice los elementos */
+    display: flex;
+    justify-content: flex-end;
+    /* Que me los ponga de lado derecho */
+
+}
+
+.buscar {
+  color: black;/* Color del texto */
+  font-size: 1.2rem;/* Tamaño de fuente */
+  text-transform: uppercase;   /* transformación de texto: mayúsculas; */
+  font-weight: 800;/* Tamaño de la tipografia */
+}
+.titulo_centrado{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.buscar input[type="text"] {
+    /*  flex: 1 0;/* estirar o cortar mis elemntos */
+    margin: 0 .5rem;/* margen */
+    border-radius: .5rem;/* Borde de la barra de buscar redondo */
+    border: none;/* Quitar un borde invisible */
+    padding: 1,3rem;/* Margen interno */
+}
+.buscar input[type="submit"]{
+    background-color: gold;
+    border: none;/* Quitar el margen externo */
+    padding: .3rem;/* margen interno */
+    border-radius: .5rem;/* Border del boton buscar redondo */
+    font-weight: 400;/* Peso o grueso de la letra */
+    cursor: pointer;/* Cursor de manito */
+}
+.buscar input[type="submit"]:hover{/* Cursor manita */
+    background-color: blue;
+     
+    color: brown;
+     
+}
+ /* Navegacion */
+.navegacion a{
+    color: beige;
+    text-decoration: none;/* 
+    texto-decoración: ninguno; */
+    font-size: 1.2rem;
+    display: block;/* bloquear todos mis elementos */
+    display: inline-block;/* pantalla: bloque en línea; */
+    margin-right: 1.5rem;/* 
+    Margen derecha:  */
+}
+.navegacion a:hover{
+    color:blue;
+}
+ .barra{
+display: grid;/* pantalla: flexible; */
+grid-template-columns: repeat(2,1fr);
+align-items: right;/* 
+alinear elementos: izquierda; */
+padding: 5rem;/* Relleno */
+ }
+ .site-header{
+background-color: black;/* color de fondo: negro; */
+padding: 1rem 3rem 2rem 3rem;/* top right botton left manecillas de reloj */
+
+ }
+.contenido_header{
+height: 100%;/* Altura */
+display: flex;/* pantalla: flexible; */
+justify-content: space-between;/* 
+justificar-contenido: espacio-entre; */
+flex-direction: column;/* dirección de flexión: columna;
+*/
+text-align: left;/* 
+alineación de texto: izquierda; */
+}
+/* Conocenos */
+.contenido_nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+.imagen img
+{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.texto_contenido blockquote{
+font-size: 1.5rem;
+color: violet;
+font-weight: 900;
+font-style: italic;
+}
+.texto_contenido p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 1rem 3rem;
+}
+/* Catalogo */
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagen_catalogo img{
+    width: 100%;
+}
+/* =================================================================================== */
+.anuncio{
+    flex-basis: calc(33.3% - 4rem);
+    background-color: rgba(85, 54, 224, 0.192);/* color de borde de product */
+    border-radius: 1rem;
+}
+.anuncio img{
+    border-radius: 1rem;
+}
+
+.contenido_anuncio{
+    padding: .5rem 2rem;/* superior e inferior = derecha a izquierda es de dos rem*/
+}
+.contenido_anuncio h3{
+    margin: 0;
+}
+
+.contenido_anuncio p{
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.boton{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: rgb(3, 50, 204);
+    color: aliceblue;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    display: block;
+}
+.boton:hover{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+/* FOOTER */
+/* html{
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+} */
+/* .contenido{
+    max-width: 90rem;
+    margin: auto;
+    padding: 1rem 5rem;
+} */
+/* ================================================ */
+.contenido_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem;
+    margin-right: 0 auto;
+}
+
+.site_footer{
+    background-color: #12276d;
+    margin: 0;
+    padding: 2rem 5rem;
+
+}
+.copyright{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.derechos p{
+    font-size: 2rem;
+    margin: 0;
+    color:aliceblue;
+    font-weight: bold;
+}
